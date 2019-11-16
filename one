@@ -1,0 +1,6 @@
+
+int middle = (left + right) / 2; 会因为left+right超过int而溢出，于是提出了如下办法：
+
+int middle = left + (right - left) / 2; 这样就不会溢出了，等价于：
+
+int middle = left + （right - left） >>１；
